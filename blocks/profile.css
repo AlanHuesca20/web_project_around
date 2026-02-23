@@ -6,8 +6,10 @@
   padding-top: 2.4rem;
 }
 .profile__avatar {
-  width: 107.75px;
-  height: 96px;
+  width: 168.75px;
+  height: 127.5px;
+  top: 155.25px;
+  left: 177.5px;
   border-radius: 50%;
 }
 .profile__container {

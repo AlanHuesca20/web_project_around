@@ -12,32 +12,37 @@
   </head>
   <body class="body">
     <header class="header">
-      <img class="header_logo" src="./images/logo.svg" alt="Around" />
+      <img class="header__logo" src="./images/logo.svg" alt="Around" />
     </header>
     <main class="container">
       <section class="profile">
-        <div class="profile_overlay">
-          <img class="profile_avatar" src="." alt="Around" />
-          <button class="profile_buttonAvatar"></button>
+        <div class="profile__overlay">
+          <img class="profile__avatar" src="." alt="Around" />
+          <button class="profile__buttonAvatar"></button>
         </div>
-        <div class="profile_edit">
-          <div class="profile_container">
-            <h1 class="profile_name"></h1>
-            <button class="profile_button-edit"></button>
+        <div class="profile__edit">
+          <div class="profile__container">
+            <h1 class="profile__name">Jacques Cousteau</h1>
+            <button class="profile__button-edit"></button>
           </div>
-          <p class="profile_profession"></p>
+          <p class="profile__profession">Explorador</p>
         </div>
-        <button class="profile_button-add"></button>
+        <button class="profile__button-add"></button>
       </section>
       <section class="cards"></section>
     </main>
     <footer class="footer">
-      <a href="" target="_blank" rel="noopener noreferrer" class="footer_text">
+      <a
+        href="https://github.com/AlanHuesca20"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer__text"
+      >
         &copy;2026 Alan Huesca
       </a>
     </footer>
 
-    <div class="popup" id="popup_edit">
+    <div class="popup" id="popup__edit">
       <div class="popup__content popup__edit1">
         <div class="popup__container">
           <button class="button popup__button-typeclose"></button>
@@ -52,7 +57,7 @@
                 minlength="2"
                 maxlength="40"
                 class="popup__input popup__input-name"
-                placeholder="Name"
+                placeholder="Nombre"
               />
               <p class="popup__input-span" id="input-name-error"></p>
               <input
@@ -60,7 +65,7 @@
                 name="input-job"
                 id="inpt-job"
                 class="popup__input popup__input-profesion"
-                placeholder="Profession"
+                placeholder="Acerca de mi"
                 required
                 minlength="2"
                 maxlength="200"
@@ -95,7 +100,7 @@
                 minlength="2"
                 maxlength="30"
                 class="popup__input popup__input-name popup__input-name-add"
-                placeholder="Title"
+                placeholder="Titulo"
               />
               <p class="popup__input-span" id="input-nameimg-error"></p>
               <input
@@ -134,7 +139,7 @@
     </template>
 
     <div class="popup popup_image" id="popup_image">
-      <div class="popup__content_image">
+      <div class="popup__content-image">
         <button class="button button button_close"></button>
         <img src="." alt="" class="popup__element popup__image" />
         <span class="popup__title popup__title_img"></span>
@@ -214,7 +219,7 @@
 
     <div class="popup" id="popup__confirmacion">
       <div class="popup__content popup__content-conf">
-        <div class="popup__contentConf">
+        <div class="popup__containerConf">
           <button
             class="button popup__button-typeclose popup__button-typecloseadd"
           ></button>
