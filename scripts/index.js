@@ -15,3 +15,16 @@ function closeModal() {
 }
 
 closeButtonEdit.addEventListener("click, closeModal");
+
+//formulario
+
+let formElement = document.querySelector(".popup__form");
+
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
+
+  let nameInput = document.querySelector(".popup__input-name");
+  let jobInput = document.querySelector(".popup__input-profesion");
+}
+
+formElement.addEventListener("submit", handleProfileFormSubmit);
