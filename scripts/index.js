@@ -27,4 +27,10 @@ function handleProfileFormSubmit(submit) {
 let nameInput = document.querySelector(".popup__input-name");
 let jobInput = document.querySelector(".popup__input-profesion");
 
+console.log(nameInput.textContent);
+console.log(jobInput.textContent);
+
+nameInput.textContent = "";
+jobInput.textContent = "";
+
 formElement.addEventListener("submit", handleProfileFormSubmit);
