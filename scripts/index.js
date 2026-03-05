@@ -2,7 +2,7 @@ let buttonEdit = document.querySelector(".profile__button-edit");
 let formEdit = document.querySelector(".popup__form");
 let popupEdit = document.querySelector("#popup__edit");
 let popupOpen = document.querySelector("popup_open");
-let closeButtonEdit = popupEdit.querySelector("popup__button-typeclose");
+let closeButtonEdit = popupEdit.querySelector(".popup__button-typeclose");
 
 function openModal() {
   popupEdit.classList.add("popup_open");
@@ -14,17 +14,17 @@ function closeModal() {
   popupEdit.classList.remove("popup_open");
 }
 
-closeButtonEdit.addEventListener("click, closeModal");
+closeButtonEdit.addEventListener("click", closeModal);
 
 //formulario
 
 let formElement = document.querySelector(".popup__form");
 
-function handleProfileFormSubmit(evt) {
-  evt.preventDefault();
-
-  let nameInput = document.querySelector(".popup__input-name");
-  let jobInput = document.querySelector(".popup__input-profesion");
+function handleProfileFormSubmit(submit) {
+  submit.preventDefault();
 }
+
+let nameInput = document.querySelector(".popup__input-name");
+let jobInput = document.querySelector(".popup__input-profesion");
 
 formElement.addEventListener("submit", handleProfileFormSubmit);
