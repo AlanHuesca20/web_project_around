@@ -6,6 +6,8 @@ let closeButtonEdit = popupEdit.querySelector(".popup__button-typeclose");
 let nameInput = document.querySelector(".popup__input-name");
 let jobInput = document.querySelector(".popup__input-profesion");
 let formElement = document.querySelector(".popup__form");
+let profileName = document.querySelector(".profile__name");
+let profileProfession = document.querySelector(".profile__profession");
 
 function openModal() {
   popupEdit.classList.add("popup_open");
@@ -24,6 +26,8 @@ function handleProfileFormSubmit(event) {
   nameInput.textContent = nameInput.value;
   jobInput.textContent = jobInput.value;
   closeModal();
+  profileName.textContent = nameInput.value;
+  profileProfession.textContent = jobInput.value;
 }
 
 formElement.addEventListener("submit", handleProfileFormSubmit);
