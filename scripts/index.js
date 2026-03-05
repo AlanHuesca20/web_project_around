@@ -20,17 +20,17 @@ closeButtonEdit.addEventListener("click", closeModal);
 
 let formElement = document.querySelector(".popup__form");
 
-function handleProfileFormSubmit(submit) {
-  submit.preventDefault();
+function handleProfileFormSubmit(event) {
+  event.preventDefault();
 }
 
 let nameInput = document.querySelector(".popup__input-name");
 let jobInput = document.querySelector(".popup__input-profesion");
 
-console.log(nameInput.textContent);
-console.log(jobInput.textContent);
+nameInput.value;
+jobInput.value;
 
-nameInput.textContent = "";
-jobInput.textContent = "";
+nameInput.textContent = nameInput.value;
+jobInput.textContent = jobInput.value;
 
 formElement.addEventListener("submit", handleProfileFormSubmit);
