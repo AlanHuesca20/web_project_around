@@ -7,7 +7,7 @@
     transform: scale(1.2);
   }
 }
-.button__type-like {
+.card__button-type-like {
   background: url(../images/button_like.svg) no-repeat;
   width: 23px;
   height: 23px;
@@ -19,7 +19,7 @@
   opacity: 0.5;
 }
 
-.button__like {
+.card__button-like {
   background: url(../images/like.svg);
   opacity: 1;
   border: none;
@@ -40,7 +40,7 @@
   cursor: pointer;
 }
 
-.button__delete {
+.card__button-delete {
   background: url(../images/delete_button.svg) no-repeat;
   width: 19px;
   height: 19px;

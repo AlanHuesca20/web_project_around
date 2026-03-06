@@ -5,6 +5,12 @@
   gap: 1rem;
 }
 
+.card__images {
+  width: 282px;
+  height: 282px;
+  object-fit: fill;
+}
+
 .card__info {
   display: flex;
   justify-content: space-between;
